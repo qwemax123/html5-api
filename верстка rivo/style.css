@@ -6,7 +6,6 @@
 /* HEADER */
 .header {
     background: #C2EFD4;
-    height: 1117px;
 }
 
 .header__container {
@@ -138,15 +137,19 @@
 
 
 .main {
-    margin-top: 150px;
+    width: 100%;
+    background-color: #C2EFD4;
 }
 
 .main__container {
-    width: 1380px;
+    max-width: 1380px;
+    width: 100%;
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    margin: 0 auto;
     gap: 160px;
+    padding-top: 138px;
+    padding-bottom: 166px;
 }
 
 .main__text-content h1 {
@@ -166,7 +169,7 @@
     max-width: 480px;
 }
 
-.main-btn {
+.main__btn {
     margin-top: 54px;
     font-size: 20px;
     color: #fff;
@@ -182,9 +185,15 @@
         box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-.main-btn:hover {
+.main__btn:hover {
     transform: translateY(-3px);
     box-shadow: 6px 18px 35px 0px rgba(34, 79, 52, 0.35);
+}
+
+.main__img {
+    display: block;
+    max-width: 100%;
+    height: auto;
 }
 
 
@@ -192,8 +201,9 @@
 
 
 .selling {
-    margin-top: 114px;
+    padding-top: 114px;
     text-align: center;
+    background-color: #fff;
 }
 
 .selling__container {
@@ -308,8 +318,9 @@
 
 
 .products {
-    margin-top: 185px;
+    padding-top: 185px;
     text-align: center;
+    background-color: #fff;
 }
 
 .products__container {
@@ -398,7 +409,8 @@
 
 
 .offer {
-    margin-top: 195px;
+    padding-top: 195px;
+    background-color: #fff;
 }
 
 .offer__container {
@@ -455,7 +467,7 @@
     font-family: Poppins, sans-serif;
 }
 
-.offer-btn {
+.offer__btn {
     margin-top: 41px;
     color: #fff;
     font-size: 20px;
@@ -473,7 +485,7 @@
         box-shadow 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
-.offer-btn:hover {
+.offer__btn:hover {
     transform: translateY(-4px);
     box-shadow: 0px 15px 35px 0px rgba(34, 79, 52, 0.3);
 }
@@ -483,8 +495,9 @@
 
 
 .design-clothes {
-    margin-top: 218px;
+    padding-top: 218px;
     text-align: center;
+    background-color: #fff;
 }
 
 .design-clothes__container {
@@ -546,8 +559,9 @@
 
 
 .corner {
-    margin-top: 249px;
+    padding-top: 249px;
     text-align: center;
+    background-color: #fff;
 }
 
 .corner__container {
@@ -563,7 +577,7 @@
     line-height: 100%;
 }
 
-.corner-cards {
+.corner__cards {
     margin-top: 109px;
     display: flex;
     gap: 37px;
@@ -612,7 +626,7 @@
     max-width: 360px;
 }
 
-.corner-btn {
+.corner__btn {
     margin-top: 125px;
     display: flex;
     justify-content: center;
@@ -621,14 +635,14 @@
 
 }
 
-.corner-btn-left {
+.corner__btn-left {
     box-shadow: 0px 7px 51px 0px rgba(0, 0, 0, 0.1);
     padding: 13px 16px;
     color: #224F34;
     border-radius: 3px;
 }
 
-.corner-btn-right {
+.corner__btn-right {
     box-shadow: 0px 7px 51px 0px rgba(0, 0, 0, 0.1);
     padding: 13px 16px;
     color: #224F34;
@@ -739,6 +753,7 @@
 
 .subscribe-form button {
     background-color: #A3F3BE;
+    border: none;
     color: #224F34;
     padding: 14px 21px;
     font-size: 20px;
